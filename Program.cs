@@ -86,7 +86,7 @@ namespace Some_testing_C
                 Console.WriteLine(num);
             }
             Console.WriteLine("Where is 1 " + Array.IndexOf(randArray2, 1));
-            string[] names1 = { "Fabian", "Yannick", "Kevin" };
+            string[] names1 = { "Fabian", "Yannick", "Kevin" };//cool
             sb1.Append("[");
             sb1.Append(String.Join(",", names1));
             sb1.Append("]");
