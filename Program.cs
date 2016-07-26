@@ -90,7 +90,8 @@ namespace Some_testing_C
             sb1.Append("[");
             sb1.Append(String.Join(",", names1));
             sb1.Append("]");
-            Console.WriteLine(sb1.ToString());
+            Console.WriteLine(sb1.ToString()+ "\n\n");
+            Thread.Sleep(2000);
 
             //-------------------List---------------------
             List<int> numList = new List<int>();
@@ -105,11 +106,11 @@ namespace Some_testing_C
             //numList.Clear();
             List<int> numList2 = new List<int>(randArray4);
             List<int> numList3 = new List<int>(new int[] { 1, 2, 3, 4 });
-
             numList.Insert(1, 10);
             numList.Remove(5);
             numList.RemoveAt(2);
 
+            //prints numList out
             for(int i = 0;i < numList.Count;i++)
             {
                 Console.WriteLine(numList[i]);
@@ -123,7 +124,9 @@ namespace Some_testing_C
             Console.WriteLine("Fabian in list " + strList.Contains("fabian",
                 StringComparer.OrdinalIgnoreCase));
 
-
+            Console.WriteLine("\n\n");
+            Thread.Sleep(2000);
+            //------------------------------------------------------------------
             //so the fkin window wont close everysingle time ... 
             Console.Write("\npress a fkin key to escape out of this realm");
             string endMePlease = Console.ReadLine();
