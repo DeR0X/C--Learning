@@ -126,7 +126,27 @@ namespace Some_testing_C
 
             Console.WriteLine("\n\n");
             Thread.Sleep(2000);
-            //------------------------------------------------------------------
+
+            //----------------------------try and catch---------------------------------
+
+            try
+            {
+                Console.Write("Divide 10 by");
+                int num2 = int.Parse(Console.ReadLine());
+                Console.WriteLine("10/{0} = {1}", num2, (10 / num2));
+            }
+            catch(DivideByZeroException ex)
+            {
+                Console.WriteLine("Cant divide by zero");
+                Console.WriteLine(ex.GetType().Name);
+                Console.WriteLine(ex.Message);
+                throw new InvalidOperationException("Operation Failed");
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.GetType().Name);
+                Console.WriteLine(ex.Message);
+            }
             //so the fkin window wont close everysingle time ... 
             Console.Write("\npress a fkin key to escape out of this realm");
             string endMePlease = Console.ReadLine();
