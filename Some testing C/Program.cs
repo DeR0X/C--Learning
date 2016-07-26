@@ -43,7 +43,7 @@ namespace Some_testing_C
             Console.WriteLine("Is empty " + string.IsNullOrEmpty(sampString));
             Console.WriteLine("Is empty " + string.IsNullOrWhiteSpace(sampString));
             Console.WriteLine("String lenght " + sampString.Length);
-            Console.WriteLine("Index of bunch " + sampString.IndexOf("Empty"));
+            Console.WriteLine("Index of empty " + sampString.IndexOf("empty"));
             Console.WriteLine("3th Word " + sampString.Substring(3,9));
 
             string[] names = new string[3] { "Fabian", "Kevin", "Yannick" };
